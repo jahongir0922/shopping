@@ -1,0 +1,113 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box !important;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", "Century Gothic", sans-serif;
+  scroll-behavior: smooth;
+  transition: 0.25s;
+}
+
+::-moz-selection {
+  background-color: yellow;
+  color: red;
+}
+
+::selection {
+  background-color: yellow;
+  color: red;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/**
+*
+* Testing
+*
+**/
+#container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 100%;
+}
+#container nav {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(57, 216, 163);
+  border: 50px solid rgb(82, 81, 81);
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: row !important;
+  gap: 0 !important;
+}
+#container nav ul {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+}
+#container nav ul a {
+  color: black;
+}
+#container nav ul a:hover {
+  color: red;
+}
+#container nav:nth-child(2) {
+  background-color: bisque;
+  border-color: brown;
+}
+#container nav:nth-child(2) ul a {
+  color: blue;
+}
+#container nav:nth-child(2) ul a:hover {
+  color: darkcyan;
+}
+@media (max-width: 480px) {
+  #container nav {
+    background-color: rgb(255, 209, 41);
+  }
+}
+@media (min-width: 481px) and (max-width: 810px) {
+  #container nav {
+    background-color: black;
+  }
+  #container nav ul {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: row !important;
+    gap: 10px !important;
+  }
+  #container nav ul a {
+    color: white !important;
+  }
+}/*# sourceMappingURL=main.css.map */
